@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ADF679F150A627600B0C564 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ADF679E150A627500B0C564 /* Cocoa.framework */; };
+		1ADF67A5150A627600B0C564 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF67A3150A627600B0C564 /* InfoPlist.strings */; };
+		1ADF67A8150A627600B0C564 /* ShiftIt_ModuleAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF67A7150A627600B0C564 /* ShiftIt_ModuleAction.m */; };
+		1ADF67AB150A627600B0C564 /* ShiftIt_ModuleSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF67AA150A627600B0C564 /* ShiftIt_ModuleSource.m */; };
+		1ADF67D0150A645B00B0C564 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF67C8150A645B00B0C564 /* Common.xcconfig */; };
+		1ADF67D1150A645B00B0C564 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF67C9150A645B00B0C564 /* Debug.xcconfig */; };
+		1ADF67D2150A645B00B0C564 /* Developer.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF67CA150A645B00B0C564 /* Developer.xcconfig */; };
+		1ADF67D3150A645B00B0C564 /* QSPlugIn.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF67CB150A645B00B0C564 /* QSPlugIn.xcconfig */; };
+		1ADF67D4150A645B00B0C564 /* QSPlugIn_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF67CC150A645B00B0C564 /* QSPlugIn_Debug.xcconfig */; };
+		1ADF67D5150A645B00B0C564 /* QSPlugIn_Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF67CD150A645B00B0C564 /* QSPlugIn_Release.xcconfig */; };
+		1ADF67D6150A645B00B0C564 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF67CF150A645B00B0C564 /* Release.xcconfig */; };
+		1ADF67D8150A685E00B0C564 /* ShiftIt.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF67D7150A685E00B0C564 /* ShiftIt.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1ADF679B150A627500B0C564 /* ShiftIt Module.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ShiftIt Module.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADF679E150A627500B0C564 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1ADF67A2150A627600B0C564 /* ShiftIt Module-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ShiftIt Module-Info.plist"; sourceTree = "<group>"; };
+		1ADF67A4150A627600B0C564 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1ADF67A6150A627600B0C564 /* ShiftIt_ModuleAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiftIt_ModuleAction.h; sourceTree = "<group>"; };
+		1ADF67A7150A627600B0C564 /* ShiftIt_ModuleAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiftIt_ModuleAction.m; sourceTree = "<group>"; };
+		1ADF67A9150A627600B0C564 /* ShiftIt_ModuleSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiftIt_ModuleSource.h; sourceTree = "<group>"; };
+		1ADF67AA150A627600B0C564 /* ShiftIt_ModuleSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiftIt_ModuleSource.m; sourceTree = "<group>"; };
+		1ADF67C8150A645B00B0C564 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Common.xcconfig; path = /private/tmp/QS/Configuration/Common.xcconfig; sourceTree = "<absolute>"; };
+		1ADF67C9150A645B00B0C564 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = /private/tmp/QS/Configuration/Debug.xcconfig; sourceTree = "<absolute>"; };
+		1ADF67CA150A645B00B0C564 /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Developer.xcconfig; path = /private/tmp/QS/Configuration/Developer.xcconfig; sourceTree = "<absolute>"; };
+		1ADF67CB150A645B00B0C564 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = QSPlugIn.xcconfig; path = /private/tmp/QS/Configuration/QSPlugIn.xcconfig; sourceTree = "<absolute>"; };
+		1ADF67CC150A645B00B0C564 /* QSPlugIn_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = QSPlugIn_Debug.xcconfig; path = /private/tmp/QS/Configuration/QSPlugIn_Debug.xcconfig; sourceTree = "<absolute>"; };
+		1ADF67CD150A645B00B0C564 /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = QSPlugIn_Release.xcconfig; path = /private/tmp/QS/Configuration/QSPlugIn_Release.xcconfig; sourceTree = "<absolute>"; };
+		1ADF67CE150A645B00B0C564 /* Quicksilver.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Quicksilver.pch; path = /private/tmp/QS/Configuration/Quicksilver.pch; sourceTree = "<absolute>"; };
+		1ADF67CF150A645B00B0C564 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = /private/tmp/QS/Configuration/Release.xcconfig; sourceTree = "<absolute>"; };
+		1ADF67D7150A685E00B0C564 /* ShiftIt.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ShiftIt.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ADF6797150A627500B0C564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADF679F150A627600B0C564 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ADF678F150A627500B0C564 = {
+			isa = PBXGroup;
+			children = (
+				1ADF67C7150A645B00B0C564 /* Configuration */,
+				1ADF67A0150A627600B0C564 /* ShiftIt Module */,
+				1ADF679D150A627500B0C564 /* Frameworks */,
+				1ADF679C150A627500B0C564 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1ADF679C150A627500B0C564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF679B150A627500B0C564 /* ShiftIt Module.qsplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ADF679D150A627500B0C564 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF679E150A627500B0C564 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1ADF67A0150A627600B0C564 /* ShiftIt Module */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF67A6150A627600B0C564 /* ShiftIt_ModuleAction.h */,
+				1ADF67A7150A627600B0C564 /* ShiftIt_ModuleAction.m */,
+				1ADF67A9150A627600B0C564 /* ShiftIt_ModuleSource.h */,
+				1ADF67AA150A627600B0C564 /* ShiftIt_ModuleSource.m */,
+				1ADF67A1150A627600B0C564 /* Supporting Files */,
+			);
+			name = "ShiftIt Module";
+			path = ShiftIt_Module;
+			sourceTree = "<group>";
+		};
+		1ADF67A1150A627600B0C564 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF67D7150A685E00B0C564 /* ShiftIt.icns */,
+				1ADF67A2150A627600B0C564 /* ShiftIt Module-Info.plist */,
+				1ADF67A3150A627600B0C564 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1ADF67C7150A645B00B0C564 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF67C8150A645B00B0C564 /* Common.xcconfig */,
+				1ADF67C9150A645B00B0C564 /* Debug.xcconfig */,
+				1ADF67CA150A645B00B0C564 /* Developer.xcconfig */,
+				1ADF67CB150A645B00B0C564 /* QSPlugIn.xcconfig */,
+				1ADF67CC150A645B00B0C564 /* QSPlugIn_Debug.xcconfig */,
+				1ADF67CD150A645B00B0C564 /* QSPlugIn_Release.xcconfig */,
+				1ADF67CE150A645B00B0C564 /* Quicksilver.pch */,
+				1ADF67CF150A645B00B0C564 /* Release.xcconfig */,
+			);
+			name = Configuration;
+			path = "/Users/james/Documents/Projects/ShiftIt Module/ShiftIt Module/../../../../../../private/tmp/QS/Configuration";
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ADF679A150A627500B0C564 /* ShiftIt Module */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADF67AF150A627600B0C564 /* Build configuration list for PBXNativeTarget "ShiftIt Module" */;
+			buildPhases = (
+				1ADF6796150A627500B0C564 /* Sources */,
+				1ADF6797150A627500B0C564 /* Frameworks */,
+				1ADF6798150A627500B0C564 /* Resources */,
+				1ADF6799150A627500B0C564 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ShiftIt Module";
+			productName = "ShiftIt Module";
+			productReference = 1ADF679B150A627500B0C564 /* ShiftIt Module.qsplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ADF6791150A627500B0C564 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "university of md college park";
+			};
+			buildConfigurationList = 1ADF6794150A627500B0C564 /* Build configuration list for PBXProject "ShiftIt Module" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1ADF678F150A627500B0C564;
+			productRefGroup = 1ADF679C150A627500B0C564 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ADF679A150A627500B0C564 /* ShiftIt Module */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ADF6798150A627500B0C564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADF67A5150A627600B0C564 /* InfoPlist.strings in Resources */,
+				1ADF67D0150A645B00B0C564 /* Common.xcconfig in Resources */,
+				1ADF67D1150A645B00B0C564 /* Debug.xcconfig in Resources */,
+				1ADF67D2150A645B00B0C564 /* Developer.xcconfig in Resources */,
+				1ADF67D3150A645B00B0C564 /* QSPlugIn.xcconfig in Resources */,
+				1ADF67D4150A645B00B0C564 /* QSPlugIn_Debug.xcconfig in Resources */,
+				1ADF67D5150A645B00B0C564 /* QSPlugIn_Release.xcconfig in Resources */,
+				1ADF67D6150A645B00B0C564 /* Release.xcconfig in Resources */,
+				1ADF67D8150A685E00B0C564 /* ShiftIt.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1ADF6799150A627500B0C564 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/ShiftIt Module/bltrversion $INFOPLIST_FILE";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ADF6796150A627500B0C564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADF67A8150A627600B0C564 /* ShiftIt_ModuleAction.m in Sources */,
+				1ADF67AB150A627600B0C564 /* ShiftIt_ModuleSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1ADF67A3150A627600B0C564 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ADF67A4150A627600B0C564 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1ADF67AD150A627600B0C564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ADF67CC150A645B00B0C564 /* QSPlugIn_Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1ADF67AE150A627600B0C564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ADF67CD150A645B00B0C564 /* QSPlugIn_Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1ADF67B0150A627600B0C564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ADF67CC150A645B00B0C564 /* QSPlugIn_Debug.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "ShiftIt Module";
+			};
+			name = Debug;
+		};
+		1ADF67B1150A627600B0C564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ADF67CD150A645B00B0C564 /* QSPlugIn_Release.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "ShiftIt Module";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ADF6794150A627500B0C564 /* Build configuration list for PBXProject "ShiftIt Module" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADF67AD150A627600B0C564 /* Debug */,
+				1ADF67AE150A627600B0C564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADF67AF150A627600B0C564 /* Build configuration list for PBXNativeTarget "ShiftIt Module" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADF67B0150A627600B0C564 /* Debug */,
+				1ADF67B1150A627600B0C564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1ADF6791150A627500B0C564 /* Project object */;
+}
