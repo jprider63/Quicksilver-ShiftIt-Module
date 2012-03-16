@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>ShiftIt.icns</string>
+	<string>ShiftIt</string>
 	<key>CFBundleIdentifier</key>
 	<string>JP.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -95,7 +95,7 @@
 		</dict>
 		<key>QSCommandsTemplate</key>
 		<dict>
-			<key>ShiftIt_ModuleExampleCommand</key>
+			<key>SILeftCommand</key>
 			<dict>
 				<key>command</key>
 				<dict>
@@ -108,18 +108,18 @@
 							<key>qs.action</key>
 							<dict>
 								<key>actionClass</key>
-								<string>ShiftIt_ModuleSource</string>
+								<string>QSShiftItControlProvider</string>
 								<key>actionSelector</key>
-								<string>someSelector</string>
+								<string>left</string>
 								<key>icon</key>
-								<string>defaultAction</string>
+								<string>ShiftIt</string>
 								<key>name</key>
-								<string>Do Something</string>
+								<string>Left</string>
 							</dict>
 						</dict>
 					</dict>
 					<key>directID</key>
-					<string>ShiftIt_ModuleInternalCommand</string>
+					<string>SILeft</string>
 				</dict>
 			</dict>
 		</dict>
@@ -180,9 +180,9 @@
 			<key>ShiftIt_ModuleTriggers</key>
 			<dict>
 				<key>icon</key>
-				<string>KEXT</string>
+				<string>ShiftIt</string>
 				<key>name</key>
-				<string>ShiftIt Module</string>
+				<string>ShiftIt</string>
 			</dict>
 		</dict>
 		<key>QSTypeDefinitions</key>
@@ -229,7 +229,22 @@
 			<key>name</key>
 			<string>Example Trigger</string>
 			<key>set</key>
-			<string>ShiftIt_Module</string>
+			<string>ShiftIt</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>SILeftTrigger</string>
+			<key>command</key>
+			<string>SILeftCommand</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Left</string>
+			<key>set</key>
+			<string>ShiftIt</string>
 		</dict>
 	</array>
 </dict>
