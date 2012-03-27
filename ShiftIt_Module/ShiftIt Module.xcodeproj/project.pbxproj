@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A7B23D3150AB09D008B0FA6 /* QSShiftItControlProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B23D2150AB09D008B0FA6 /* QSShiftItControlProvider.m */; };
 		1ADF679F150A627600B0C564 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ADF679E150A627500B0C564 /* Cocoa.framework */; };
 		1ADF67A5150A627600B0C564 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF67A3150A627600B0C564 /* InfoPlist.strings */; };
-		1ADF67A8150A627600B0C564 /* ShiftIt_ModuleAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF67A7150A627600B0C564 /* ShiftIt_ModuleAction.m */; };
 		1ADF67AB150A627600B0C564 /* ShiftIt_ModuleSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF67AA150A627600B0C564 /* ShiftIt_ModuleSource.m */; };
 		1ADF67D0150A645B00B0C564 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF67C8150A645B00B0C564 /* Common.xcconfig */; };
 		1ADF67D1150A645B00B0C564 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF67C9150A645B00B0C564 /* Debug.xcconfig */; };
@@ -22,12 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A7B23D1150AB09D008B0FA6 /* QSShiftItControlProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSShiftItControlProvider.h; sourceTree = "<group>"; };
+		1A7B23D2150AB09D008B0FA6 /* QSShiftItControlProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSShiftItControlProvider.m; sourceTree = "<group>"; };
 		1ADF679B150A627500B0C564 /* ShiftIt Module.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ShiftIt Module.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADF679E150A627500B0C564 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		1ADF67A2150A627600B0C564 /* ShiftIt Module-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ShiftIt Module-Info.plist"; sourceTree = "<group>"; };
+		1ADF67A2150A627600B0C564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ADF67A4150A627600B0C564 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1ADF67A6150A627600B0C564 /* ShiftIt_ModuleAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiftIt_ModuleAction.h; sourceTree = "<group>"; };
-		1ADF67A7150A627600B0C564 /* ShiftIt_ModuleAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiftIt_ModuleAction.m; sourceTree = "<group>"; };
 		1ADF67A9150A627600B0C564 /* ShiftIt_ModuleSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiftIt_ModuleSource.h; sourceTree = "<group>"; };
 		1ADF67AA150A627600B0C564 /* ShiftIt_ModuleSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiftIt_ModuleSource.m; sourceTree = "<group>"; };
 		1ADF67C8150A645B00B0C564 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Common.xcconfig; path = /private/tmp/QS/Configuration/Common.xcconfig; sourceTree = "<absolute>"; };
@@ -38,7 +38,7 @@
 		1ADF67CD150A645B00B0C564 /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = QSPlugIn_Release.xcconfig; path = /private/tmp/QS/Configuration/QSPlugIn_Release.xcconfig; sourceTree = "<absolute>"; };
 		1ADF67CE150A645B00B0C564 /* Quicksilver.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Quicksilver.pch; path = /private/tmp/QS/Configuration/Quicksilver.pch; sourceTree = "<absolute>"; };
 		1ADF67CF150A645B00B0C564 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = /private/tmp/QS/Configuration/Release.xcconfig; sourceTree = "<absolute>"; };
-		1ADF67D7150A685E00B0C564 /* ShiftIt.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ShiftIt.icns; sourceTree = "<group>"; };
+		1ADF67D7150A685E00B0C564 /* ShiftIt.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = ShiftIt.icns; path = ShiftIt_Module/ShiftIt.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +53,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A7B23D0150AAF13008B0FA6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF67D7150A685E00B0C564 /* ShiftIt.icns */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		1ADF678F150A627500B0C564 = {
 			isa = PBXGroup;
 			children = (
+				1ADF67A1150A627600B0C564 /* Supporting Files */,
+				1A7B23D0150AAF13008B0FA6 /* Resources */,
 				1ADF67C7150A645B00B0C564 /* Configuration */,
 				1ADF67A0150A627600B0C564 /* ShiftIt Module */,
 				1ADF679D150A627500B0C564 /* Frameworks */,
@@ -82,11 +92,10 @@
 		1ADF67A0150A627600B0C564 /* ShiftIt Module */ = {
 			isa = PBXGroup;
 			children = (
-				1ADF67A6150A627600B0C564 /* ShiftIt_ModuleAction.h */,
-				1ADF67A7150A627600B0C564 /* ShiftIt_ModuleAction.m */,
+				1A7B23D1150AB09D008B0FA6 /* QSShiftItControlProvider.h */,
+				1A7B23D2150AB09D008B0FA6 /* QSShiftItControlProvider.m */,
 				1ADF67A9150A627600B0C564 /* ShiftIt_ModuleSource.h */,
 				1ADF67AA150A627600B0C564 /* ShiftIt_ModuleSource.m */,
-				1ADF67A1150A627600B0C564 /* Supporting Files */,
 			);
 			name = "ShiftIt Module";
 			path = ShiftIt_Module;
@@ -95,11 +104,11 @@
 		1ADF67A1150A627600B0C564 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1ADF67D7150A685E00B0C564 /* ShiftIt.icns */,
-				1ADF67A2150A627600B0C564 /* ShiftIt Module-Info.plist */,
+				1ADF67A2150A627600B0C564 /* Info.plist */,
 				1ADF67A3150A627600B0C564 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			path = ShiftIt_Module;
 			sourceTree = "<group>";
 		};
 		1ADF67C7150A645B00B0C564 /* Configuration */ = {
@@ -115,7 +124,7 @@
 				1ADF67CF150A645B00B0C564 /* Release.xcconfig */,
 			);
 			name = Configuration;
-			path = "/Users/james/Documents/Projects/ShiftIt Module/ShiftIt Module/../../../../../../private/tmp/QS/Configuration";
+			path = "/private/tmp/QS/Configuration";
 			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
@@ -205,8 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ADF67A8150A627600B0C564 /* ShiftIt_ModuleAction.m in Sources */,
 				1ADF67AB150A627600B0C564 /* ShiftIt_ModuleSource.m in Sources */,
+				1A7B23D3150AB09D008B0FA6 /* QSShiftItControlProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +237,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1ADF67CC150A645B00B0C564 /* QSPlugIn_Debug.xcconfig */;
 			buildSettings = {
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 			};
 			name = Debug;
 		};
@@ -235,6 +245,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1ADF67CD150A645B00B0C564 /* QSPlugIn_Release.xcconfig */;
 			buildSettings = {
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 			};
 			name = Release;
 		};
@@ -242,6 +253,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1ADF67CC150A645B00B0C564 /* QSPlugIn_Debug.xcconfig */;
 			buildSettings = {
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = "ShiftIt Module";
 			};
 			name = Debug;
@@ -250,6 +262,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1ADF67CD150A645B00B0C564 /* QSPlugIn_Release.xcconfig */;
 			buildSettings = {
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = "ShiftIt Module";
 			};
 			name = Release;
