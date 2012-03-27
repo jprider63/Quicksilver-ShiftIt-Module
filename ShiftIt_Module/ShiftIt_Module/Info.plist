@@ -37,7 +37,7 @@
 		<key>icon</key>
 		<string>ShiftIt</string>
 	</dict>
-	<key>QSPresetAdditionsTemplate</key>
+	<key>QSPresetAdditions</key>
 	<array>
 		<dict>
 			<key>ID</key>
@@ -68,7 +68,7 @@
 			<key>ShiftIt_ModuleActionProvider</key>
 			<string>ShiftIt_ModuleActionProvider</string>
 		</dict>
-		<key>QSApplicationActionsTemplate</key>
+		<key>QSApplicationActions</key>
 		<dict>
 			<key>com.domain.application</key>
 			<dict>
@@ -85,15 +85,10 @@
 		</dict>
 		<key>QSBundleChildHandlers</key>
 		<dict>
-			<key>ShiftIt_ModuleType</key>
-			<string>ShiftIt_ModuleSource</string>
-		</dict>
-		<key>QSBundleChildHandlersTemplate</key>
-		<dict>
 			<key>com.domain.application</key>
 			<string>ShiftIt_ModuleSource</string>
 		</dict>
-		<key>QSCommandsTemplate</key>
+		<key>QSCommands</key>
 		<dict>
 			<key>SILeftCommand</key>
 			<dict>
@@ -133,9 +128,9 @@
 			<key>ShiftIt_ModuleSource</key>
 			<string>ShiftIt_ModuleSource</string>
 		</dict>
-		<key>QSPreferencePanesTemplate</key>
+		<key>QSPreferencePanes</key>
 		<dict>
-			<key>ShiftIt_ModulePrefPaneTemplate</key>
+			<key>ShiftIt_ModulePrefPane</key>
 			<dict>
 				<key>class</key>
 				<string>ShiftIt_ModulePrefPane</string>
@@ -147,7 +142,7 @@
 				<string>ShiftIt_Module</string>
 			</dict>
 		</dict>
-		<key>QSProxiesTemplate</key>
+		<key>QSProxies</key>
 		<dict>
 			<key>ShiftIt_ModuleSomeProxy</key>
 			<dict>
@@ -163,19 +158,9 @@
 				</array>
 			</dict>
 		</dict>
-		<key>QSTriggerEventsTemplate</key>
-		<dict>
-			<key>ShiftIt_ModuleSomeEvent</key>
-			<dict>
-				<key>icon</key>
-				<string>KEXT</string>
-				<key>name</key>
-				<string>Do something in response to this event</string>
-				<key>provider</key>
-				<string>ShiftIt_ModuleSource</string>
-			</dict>
-		</dict>
-		<key>QSTriggerSetsTemplates</key>
+		<key>QSTriggerEvents</key>
+		<dict/>
+		<key>QSTriggerSets</key>
 		<dict>
 			<key>ShiftIt_ModuleTriggers</key>
 			<dict>
@@ -196,7 +181,7 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>QSRequirementsTemplate</key>
+	<key>QSRequirements</key>
 	<dict>
 		<key>plugins</key>
 		<array>
@@ -208,29 +193,8 @@
 			</dict>
 		</array>
 	</dict>
-	<key>QSTriggerAdditionsTemplate</key>
+	<key>QSTriggerAdditions</key>
 	<array>
-		<dict>
-			<key>ID</key>
-			<string>ShiftIt_ModuleTrigger</string>
-			<key>command</key>
-			<string>ShiftIt_ModuleExampleCommand</string>
-			<key>defaults</key>
-			<dict>
-				<key>characters</key>
-				<string>x</string>
-				<key>keyCode</key>
-				<integer>124</integer>
-				<key>modifiers</key>
-				<integer>9961768</integer>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
-			<key>name</key>
-			<string>Example Trigger</string>
-			<key>set</key>
-			<string>ShiftIt</string>
-		</dict>
 		<dict>
 			<key>ID</key>
 			<string>SILeftTrigger</string>
